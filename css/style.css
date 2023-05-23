@@ -63,7 +63,7 @@ p{
   margin-bottom: 16px;
 }
 
-.hero-main{
+.hero{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -254,12 +254,6 @@ p{
   }
 
 
-
-
-
-
-
-
 /* ABOUT PAGE */
 
 .about-main{
@@ -350,5 +344,26 @@ p{
 
 	.large-image figure img{
 		max-width: 100%;
+	}
+}
+
+
+.trophies{
+	padding: 100px 0;
+}
+
+.trophies h2{
+	margin-bottom: 20px;
+}
+
+.trophies .grid{
+	display: grid;
+	gap: 24px;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media only screen and (max-width: 768px) {
+	.trophies .grid{
+		grid-template-columns: repeat(1, minmax(0, 1fr));
 	}
 }

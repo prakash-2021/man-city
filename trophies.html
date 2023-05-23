@@ -10,27 +10,148 @@
     <link rel="icon" href="/img/logo.png" type="image/x-icon" />
   </head>
   <body>
-    <main>
+    <!-- Header Section -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="./index.html" class="brand">
+          <img src="./img/logo.png" alt="" width="40px" />
+        </a>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+        <div class="menu" id="menu">
+          <ul class="menu-inner">
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="about.html" class="menu-link">About</a>
+            </li>
+            <li class="menu-item active">
+              <a href="#" class="menu-link">Trophies</a>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">Players</a></li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Managers</a>
+            </li>
+          </ul>
+        </div>
+        <button class="menu-block"><i class="bx bx-shopping-bag"></i></button>
+      </nav>
+    </header>
+
+    <main class="trophies">
       <div class="container">
-        <h2>Trophies Collection</h2>
+        <h2 class="heading-one">Trophies Collection</h2>
 
-        <div class="card">
-          <a href="#" class="card__image">
-            <img
-              src="https://images.unsplash.com/photo-1483706571191-85c0c76b1947?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-              alt=""
-            />
-          </a>
+        <div class="grid">
+          <div class="card">
+            <a href="#" class="card__image">
+              <img src="./img/pl-trphy.webp" alt="" />
+            </a>
 
-          <div class="card__body">
-            <h6 class="card__subtitle">Premier League</h6>
+            <div class="card__body">
+              <h6 class="card__subtitle">Premier League x 7</h6>
 
-            <a href="#" class="card__title"
-              >A creative adult is the child that survived</a
-            >
+              <a class="card__title">
+                Towering Above All, Champions of the Premier League Again Again.
+              </a>
+              <p>7 times champions</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#" class="card__image">
+              <img src="./img/fa-cup.jpg" alt="" />
+            </a>
+
+            <div class="card__body">
+              <h6 class="card__subtitle">FA Cup x 6</h6>
+
+              <a class="card__title">
+                A knockout football competition in men's
+                domestic English football.
+              </a>
+              <p>6 times champions</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#" class="card__image">
+              <img src="./img/fa-cup.jpg" alt="" />
+            </a>
+
+            <div class="card__body">
+              <h6 class="card__subtitle">Community Shield x 7</h6>
+
+              <a class="card__title">
+                Between the champions of Premier League and FA Cup winner.
+              </a>
+              <p>7 times champions</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#" class="card__image">
+              <img src="./img/european-cup.jpg" alt="" />
+            </a>
+
+            <div class="card__body">
+              <h6 class="card__subtitle">European Cup x 7</h6>
+
+              <a class="card__title">
+                Winners goes through a round robin group stage to qualify for a
+                double-legged knockout format, and a single leg final.
+              </a>
+              <p>1 time champion</p>
+            </div>
           </div>
         </div>
       </div>
     </main>
+
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="https://www.facebook.com/mancity/">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="https://www.youtube.com/channel/UCkzCjdRMrW2vXLx8mvPVLdQ">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="https://twitter.com/ManCity">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="https://www.instagram.com/mancity/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-menu">
+          <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="trophies.html">Trophies</a></li>
+          <li class="menu__item"><a class="menu__link" href="manager.html">Manager</a></li>
+          <li class="menu__item"><a class="menu__link" href="player.html">Player</a></li>
+        </ul>
+        <p>
+         2023 | Made with &#10084 by
+          Prakash Shrestha
+        </p>
+      </footer>
   </body>
 </html>
