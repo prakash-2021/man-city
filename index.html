@@ -30,7 +30,7 @@
             </li>
             <li class="menu-item"><a href="players.html" class="menu-link">Players</a></li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Managers</a>
+              <a href="managers.html" class="menu-link">Managers</a>
             </li>
           </ul>
         </div>
@@ -212,7 +212,7 @@
         <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
         <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
         <li class="menu__item"><a class="menu__link" href="trophies.html">Trophies</a></li>
-        <li class="menu__item"><a class="menu__link" href="manager.html">Manager</a></li>
+        <li class="menu__item"><a class="menu__link" href="managers.html">Manager</a></li>
         <li class="menu__item"><a class="menu__link" href="players.html">Player</a></li>
       </ul>
       <p>
@@ -230,35 +230,5 @@
     nomodule
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
   ></script>
-
-  <script>
-    const navbarMenu = document.getElementById("menu");
-    const burgerMenu = document.getElementById("burger");
-    const headerMenu = document.getElementById("header");
-
-    // Toggle Navbar Menu on Burger Click
-    if (burgerMenu && navbarMenu) {
-      burgerMenu.addEventListener("click", () => {
-        burgerMenu.classList.toggle("is-active");
-        navbarMenu.classList.toggle("is-active");
-      });
-    }
-
-    // Closed Navbar Menu on Links Click
-    document.querySelectorAll(".menu-link").forEach((link) => {
-      link.addEventListener("click", () => {
-        burgerMenu.classList.remove("is-active");
-        navbarMenu.classList.remove("is-active");
-      });
-    });
-
-    // Fixed Navbar Menu on Window Resize
-    window.addEventListener("resize", () => {
-      if (window.innerWidth >= 769) {
-        if (navbarMenu.classList.contains("is-active")) {
-          navbarMenu.classList.remove("is-active");
-        }
-      }
-    });
-  </script>
+  <script src="./js/script.js"></script>
 </html>
